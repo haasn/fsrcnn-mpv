@@ -10,7 +10,20 @@ training other versions of the network.
 
 ## gen.hs
 
-This generates the shader files, based on weights exported by FSRCNN-TensorFlow
+This generates the shader files, based on weights exported by
+https://github.com/haasn/FSRCNN-TensorFlow
+
+(Note: You need my fork of FSRCNN-TensorFlow in order to export weights in the
+right format)
+
+## How to train your own NN
+
+Refer to the FSRCNN-TensorFlow instructions. To generate the GLSL code, I do:
+
+```bash
+$ vim gen.hs -- update `main` for the right number of passes
+$ cat gen.hs FSRCNN-TensorFlow/params/weights24_4_2.txt | runhaskell > FSRCNN_24_4_2.glsl
+```
 
 ## FSRCNN_4_2_1.glsl
 
