@@ -30,3 +30,11 @@ Requires a branch of mpv which is on my computer.
 A larger network, tuned to the limitations of mpv. (s,d,m) = (24,4,2), picked
 because mpv only allows 6 textures unit (6*4 = 24), and because 4 components fit
 into a single texture (unlike 5).
+
+## Screenshot
+
+![butterfly original](butterfly_original.png)
+![butterfly 24_4_2](butterfly_24_4_2.png)
+
+![bird original](./bird_original.png)
+![bird 24_4_2](./bird_24_4_2.png)
