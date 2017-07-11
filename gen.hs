@@ -16,10 +16,10 @@ import Data.Traversable
 --     [b1, b2, b3, b4, b5, b6, b7, b8]
 --     [alpha1, alpha2, alpha3, alpha4, alpha5, alpha6, alpha7]
 
-main = generateShader 24 4 2
-    [w1, w2, w3, w4, w5, w6]
-    [b1, b2, b3, b4, b5, b6]
-    [alpha1, alpha2, alpha3, alpha4, alpha5]
+main = generateShader 24 4 4
+    [w1, w2, w3, w4, w5, w6, w7, w8]
+    [b1, b2, b3, b4, b5, b6, b7, b8]
+    [alpha1, alpha2, alpha3, alpha4, alpha5, alpha6, alpha7]
 
 generateShader :: Int -> Int -> Int -> [[Double]] -> [[Double]] -> [[Double]] -> IO ()
 generateShader s d m weights biases alphas | s`mod`4 == 0 && d <= 4 = do

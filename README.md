@@ -44,10 +44,16 @@ A larger network, tuned to the limitations of mpv. (s,d,m) = (24,4,2), picked
 because mpv only allows 6 textures unit (6*4 = 24), and because 4 components fit
 into a single texture (unlike 5).
 
+## FSRCNN_24_4_4_ssim.glsl
+
+An even larger network, trained using MS-SSIM instead of MSE as the loss
+function and the Adam optimizer instead of SGD+Momentum. Probably the limit of
+what is currently possible in realtime, at least for 3x upscaling ratio.
+
 ## Screenshot
 
 ![butterfly original](butterfly_original.png)
-![butterfly 24_4_2](butterfly_24_4_2.png)
+![butterfly 24_4_4](butterfly_24_4_4_ssim.png)
 
 ![bird original](./bird_original.png)
-![bird 24_4_2](./bird_24_4_2.png)
+![bird 24_4_4](./bird_24_4_4_ssim.png)
